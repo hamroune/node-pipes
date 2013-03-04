@@ -41,6 +41,10 @@ pipes
   .aggregate('count:3', function(dataList){
   		console.log('Count ', dataList, '\n');
   })
+
+  .handler(function(message){
+  	console.log('Current Mesasge', message);
+  })
   
   .run()
 

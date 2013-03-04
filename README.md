@@ -69,7 +69,7 @@ pipes
 if you want a time window,
 
 
-
+```js
 pipes
   
   .streamFrom(data)
