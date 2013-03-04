@@ -1,0 +1,52 @@
+{
+  "name": "node-pipes",
+  
+  "version": "0.3.0",
+
+  "description": "Pipes Library",
+  
+  "homepage": "http://github.com/hamroune/node-pipes",
+  
+  "author": {
+    "name": "Hamroune Zahir",
+    "url": "https://twitter.com/hamrounez"
+  },
+
+  "contributors": [
+    {
+      "name": " Hamroun zahir",
+      "email": "hamroune.z@gmail.com"
+    }
+  ],
+
+  "preferGlobal": false,
+
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/hamroune/node-pipes.git"
+  },
+
+  "keywords": [
+    "events",
+    "publish",
+    "subscribe",
+    "fanout",
+    "notification",
+    "messages",
+    "filters"
+  ],
+
+  "directories": { "lib": "./lib", "test": "./test" },
+
+  "dependencies": {
+    "bash-color": "*",
+    "node-eventer": "*",
+    "underscore": "*"
+  },
+  
+  "main": "lib/node-pipes"
+}
