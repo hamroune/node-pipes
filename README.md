@@ -11,7 +11,7 @@ Then import it into your project:
 
 ```js
 //Initilze The Node Pipes
-var Pipes = require('./lib/node-pipes.js').init();
+var Pipes = require('node-pipes').init();
 
 //Instance
 var pipes = new Pipes();
