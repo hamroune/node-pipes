@@ -123,7 +123,7 @@ pipes
  ;
 ```
 
-Streaming Tweeter
+Streaming Twitter
 
 ```
 pipes
