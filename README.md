@@ -139,3 +139,17 @@ pipes
   })
 
 ```
+
+
+Stream from CSV file
+```
+pipes
+  
+  .streamFromCsv('data.csv', {schema: ["name", 'age', 'sexe'], separator: ';'})  
+
+  .handler(function(person){
+  	console.log('name ==> :', person.name);  	
+  })
+
+;
+```
