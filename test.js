@@ -10,14 +10,10 @@ var count = 0;
 
 pipes
   
-  .streamFromTwitter({
-  	username: 'your username',
-  	password: 'pass',
-  	track: 'airbus' //a keyword hashtag
-  })  
+  .streamFromCsv('data.csv', {schema: ["name", 'age', 'sexe'], separator: ';'})  
 
-  .handler(function(tweet){
-  	console.log('received tweet (id) ==>', tweet.id);  	
+  .handler(function(person){
+  	console.log('name ==> :', person.name);  	
   })
 
   

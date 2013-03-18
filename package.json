@@ -46,7 +46,8 @@
     "bash-color": "*",
     "node-eventer": "*",
     "underscore": "*",
-    "request": "*"
+    "request": "*",
+    "line-reader": "*"
   },
   
   "main": "lib/node-pipes"
