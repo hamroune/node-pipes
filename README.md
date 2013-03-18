@@ -46,17 +46,56 @@ var data = [
 
 //ENJOY WITH PIPES
 
+
+```
+
+
+Simple Handlet
+```
 pipes
   
   .streamFrom(data)
 
-  .heandler(function(message){
+  .handler(function(message){
+  	//handle each input message
   	console.log('Current Message', message);
-  })
+  })   
+
+  .run()
+ ;
+
+```
+
+Filtrage
+```
+pipes
+  
+  .streamFrom(data)
+
+  .filter(function(message){
+  	return message.age >= 30
+  }) 
+  
+  .handler(function(message){
+  	//Only messages that age >= 30 are handled
+  	console.log('Only age >=30', message);
+  })   
+  
+  .run()
+
+ ;
+
+```
+
+Aggregation Computation
+```
+pipes
+  
+  .streamFrom(data)
   
   //Each 3 messages
   .aggregate('count:3', function(dataList){
-  		console.log('Count ', dataList, '\n');
+  	console.log('Count ', dataList, '\n');
   })
   
   .run()
@@ -66,8 +105,8 @@ pipes
 ```
 
 
-if you want a time window,
 
+Windowing
 
 ```js
 pipes
@@ -82,6 +121,21 @@ pipes
   .run()
 
  ;
-
 ```
 
+Streaming Tweeter
+
+```
+pipes
+  
+  .streamFromTwitter({
+  	username: 'your user name',
+  	password: 'your password',
+  	track: '#airbus'
+  })  
+
+  .handler(function(tweet){
+  	console.log('received tweet', tweet);  	
+  })
+
+```
