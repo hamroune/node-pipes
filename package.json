@@ -45,7 +45,8 @@
   "dependencies": {
     "bash-color": "*",
     "node-eventer": "*",
-    "underscore": "*"
+    "underscore": "*",
+    "request": "*"
   },
   
   "main": "lib/node-pipes"
